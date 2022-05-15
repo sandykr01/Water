@@ -86,7 +86,7 @@ function TweetBox() {
           type="submit"
           className="tweetBox__tweetButton"
         >
-          Tweet
+          Merge
         </Button>
       </form>
     </div>

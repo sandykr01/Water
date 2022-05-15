@@ -6,6 +6,7 @@ import VerifiedUserIcon from "@material-ui/icons/VerifiedUser";
 import ChatBubbleOutlineIcon from "@material-ui/icons/ChatBubbleOutline";
 import RepeatIcon from "@material-ui/icons/Repeat";
 import FavoriteBorderIcon from "@material-ui/icons/FavoriteBorder";
+import AccountBalanceWalletIcon from '@material-ui/icons/AccountBalanceWallet';
 import PublishIcon from "@material-ui/icons/Publish";
 import DeleteIcon from '@material-ui/icons/Delete';
 
@@ -33,13 +34,7 @@ const Post = forwardRef(
             </div>
           </div>
           <div className="post__footer">
-            <ChatBubbleOutlineIcon fontSize="small" />
-            <RepeatIcon fontSize="small" />
-            <FavoriteBorderIcon fontSize="small" />
-            <PublishIcon fontSize="small" />
-            {personal ? (
-              <DeleteIcon fontSize="small" onClick={onClick}/>
-            ) : ("")}
+          <AccountBalanceWalletIcon fontSize="medium" color="success" sx={{ fontSize: 40 }} />
           </div>
         </div>
       </div>

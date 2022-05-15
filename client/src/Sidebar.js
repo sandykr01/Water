@@ -1,6 +1,6 @@
 import React from "react";
 import "./Sidebar.css";
-import TwitterIcon from "@material-ui/icons/Twitter";
+// import TwitterIcon from "@material-ui/icons/Twitter";
 import SidebarOption from "./SidebarOption";
 import HomeIcon from "@material-ui/icons/Home";
 import SearchIcon from "@material-ui/icons/Search";
@@ -11,26 +11,28 @@ import ListAltIcon from "@material-ui/icons/ListAlt";
 import PermIdentityIcon from "@material-ui/icons/PermIdentity";
 import MoreHorizIcon from "@material-ui/icons/MoreHoriz";
 import { Button } from "@material-ui/core";
+import OpacityIcon from '@material-ui/icons/Opacity';
+import {DominoSpinner} from "react-spinners-kit";
 
 function Sidebar() {
-
   return (
     <div className="sidebar">
-      <TwitterIcon className="sidebar__twitterIcon" />
+      <OpacityIcon className="sidebar__twitterIcon" />
 
       <SidebarOption Icon={HomeIcon} text="Home" />
-      <SidebarOption Icon={SearchIcon} text="Explore" />
+      {/* <SidebarOption Icon={SearchIcon} text="Explore" />
       <SidebarOption Icon={NotificationsNoneIcon} text="Notifications" />
       <SidebarOption Icon={MailOutlineIcon} text="Messages" />
       <SidebarOption Icon={BookmarkBorderIcon} text="Bookmarks" />
-      <SidebarOption Icon={ListAltIcon} text="Lists"/>
-      <SidebarOption Icon={PermIdentityIcon} text="Profile"/>
-      <SidebarOption Icon={MoreHorizIcon} text="More" />
+      <SidebarOption Icon={ListAltIcon} text="Lists"/> */}
+      <SidebarOption Icon={PermIdentityIcon} text="Profile" />
+      <DominoSpinner size={230}/>
+      {/* <SidebarOption Icon={MoreHorizIcon} text="More" /> */}
 
       {/* Button -> Tweet */}
-      <Button variant="outlined" className="sidebar__tweet" fullWidth>
+      {/* <Button variant="outlined" className="sidebar__tweet" fullWidth>
         Tweet
-      </Button>
+      </Button> */}
     </div>
   );
 }
