@@ -101,7 +101,7 @@ function Feed({personal}) {
       </div>
 
       <TweetBox />
-
+      
       <FlipMove>
         {posts.map((post) => (
           <Post

@@ -20,7 +20,7 @@ function Widgets() {
 
         <TwitterTimelineEmbed
           sourceType="profile"
-          screenName="Naval"
+          screenName="woonomic"
           options={{ height: 800 }}
         />
 

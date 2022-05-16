@@ -25,7 +25,11 @@ function Sidebar() {
       <SidebarOption Icon={MailOutlineIcon} text="Messages" />
       <SidebarOption Icon={BookmarkBorderIcon} text="Bookmarks" />
       <SidebarOption Icon={ListAltIcon} text="Lists"/> */}
-      <SidebarOption Icon={PermIdentityIcon} text="Profile" />
+      {/* <div onClick={()=> window.open("https://rinkeby.etherscan.io/txs?a=0x1C1fd9cAd6A916c7e2F29C8FeA334811A72521eA", "_self")}> */}
+      {/* <Button> */}
+        <SidebarOption Icon={PermIdentityIcon} text="Profile" />
+        {/* </Button> */}
+      {/* </div> */}
       <DominoSpinner size={230}/>
       {/* <SidebarOption Icon={MoreHorizIcon} text="More" /> */}
 
